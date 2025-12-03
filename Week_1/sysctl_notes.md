@@ -1,4 +1,4 @@
-# Sysctl Kernel Hardening Notes — Ubuntu Security Lab (Keenan)
+# Sysctl Kernel Hardening Notes
 
 ## Overview
 Sysctl is configured to implement kernel-level hardening across network,

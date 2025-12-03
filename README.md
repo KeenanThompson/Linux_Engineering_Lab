@@ -1,38 +1,32 @@
 Project Summary
 
-This repository contains a structured set of security engineering artifacts demonstrating practical capability in Linux system hardening, host-based detection engineering, secure configuration enforcement, and defensive control implementation. The contents reflect the type of technical work performed by security engineers responsible for securing production workloads, validating host security posture, and supporting incident response and audit programs.
+This repository contains a structured collection of security engineering artifacts demonstrating practical capability in Linux system hardening, host-based detection engineering, secure configuration enforcement, and defensive control implementation. The material reflects hands-on work expected of engineers responsible for maintaining secure production hosts, validating system posture, and supporting incident response and audit activities.
 
-The environment was configured and hardened using industry-standard controls spanning authentication, access control, network boundary protection, intrusion prevention, kernel-level hardening, and audit instrumentation. All changes were executed on a live Ubuntu system, with each configuration validated through command outputs, log review, audit records, and functional testing. The repository includes both the applied configurations and the resulting evidence, aligning with expectations for verifiable security engineering work.
-
-The technical scope includes:
-
-- Establishment of a secure host baseline enabling configuration drift detection and forensic comparison
-
-- Hardening of remote access pathways using SSH policy controls, key-based authentication, and session visibility
-
-- Enforcement of least-privilege network access through UFW with rate-limited ingress and controlled service exposure
-
-- Deployment and tuning of Fail2Ban for host-based intrusion prevention and early brute-force detection
-
-- Development of a comprehensive auditd policy covering privileged operations, configuration changes, authentication behavior, and command execution
-
-- Kernel-level security enhancements via sysctl, including address space layout randomization, packet filtering, ICMP hardening, and anti-tampering measures
-
-- Documentation of procedures, evidence, and validation steps in a repeatable and reviewable format
+The environment was configured and hardened using industry-standard controls covering authentication, access control, network boundary protection, intrusion prevention, kernel-level hardening, and audit instrumentation. All configurations were applied on a live Ubuntu system and validated through command outputs, log review, audit records, and functional testing. The repository includes both the applied configurations and the evidence produced during validation, aligned with expectations for verifiable security engineering work.
 
 
-The material demonstrates capabilities relevant to roles focused on securing and validating Linux-based systems, such as:
+Technical Scope
+  
+  The project delivers a cohesive, end-to-end host security baseline through:
+  
+    - Baseline Establishment
+      Creation of a measurable system baseline supporting configuration governance, drift detection, and forensic comparison.
+    
+    - Remote Access Hardening
+      SSH policy enforcement including key-based authentication, session controls, and hardened access pathways.
+    
+    - Network Boundary Controls
+      Least-privilege ingress filtering and service exposure management using UFW with rate limiting and controlled access policies.
+    
+    - Host-Level Intrusion Prevention
+      Deployment and tuning of Fail2Ban to detect brute-force activity and enforce automated response actions.
+    
+    - Audit & Visibility Instrumentation
+      Comprehensive auditd policy capturing privileged operations, configuration changes, authentication behavior, and command execution.
+    
+    - Kernel-Level Hardening
+      sysctl configurations supporting memory protection, ICMP and packet-handling restrictions, tamper resistance, and attack-surface reduction.
+    
+    - Documentation & Evidence Generation
+      Repeatable procedures, validation output, implementation notes, and supporting artifacts demonstrating each configuration’s effect.
 
-- Security Engineer
-
-- Detection Engineer
-
-- Cloud Security Engineer
-
-- SOC Engineer or Analyst III
-
-- IAM Engineer (host-level access control foundations)
-
-- Infrastructure Security Engineer
-
-The repository’s modular structure sets the foundation for subsequent phases involving centralized logging architectures, network telemetry enrichment, IAM and privilege modeling, and cloud security controls across AWS environments. The work emphasizes disciplined configuration practices, traceable evidence, and technical depth consistent with enterprise security engineering expectations.

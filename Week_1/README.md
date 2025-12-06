@@ -10,7 +10,7 @@ Objective
 
 Scope of Work
 
-  Week 1 delivered the following technical areas:
+  This lab delivered the following technical areas:
 
     System Baseline Enumeration
       - Identification of OS details, kernel version, services, network configuration,

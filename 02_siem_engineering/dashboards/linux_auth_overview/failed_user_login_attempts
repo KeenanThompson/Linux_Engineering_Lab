@@ -1,0 +1,3 @@
+index=linux sourcetype=linux_secure "Failed password for"
+| rex "Failed password for(?: invalid user)? (?<user>\S+) from (?<src_ip>\S+)"
+| table _time user src_ip

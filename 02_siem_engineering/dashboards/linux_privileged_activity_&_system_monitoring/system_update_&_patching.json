@@ -1,0 +1,3 @@
+index=linux sourcetype=linux_secure OR sourcetype=syslog
+| eval pending_updates=0
+| stats max(pending_updates) AS pending_updates

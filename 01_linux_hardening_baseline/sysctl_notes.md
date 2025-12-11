@@ -43,14 +43,15 @@ infrastructure security, cloud, and detection engineering roles.
 ---
 
 ## Commands Executed
+```
 sudo nano /etc/sysctl.d/99-security.conf  
 sudo sysctl --system  
 sudo sysctl -a | grep <key>  
-
+```
 ---
 
 ## Validation Outputs
-
+```
 root@UbuntuLab:/home/Keenan# sysctl net.ipv4.tcp_syncookies
 net.ipv4.tcp_syncookies = 1
 root@UbuntuLab:/home/Keenan# sysctl kernel.kptr_restrict
@@ -62,7 +63,7 @@ net.ipv4.conf.all.accept_redirects = 0
 root@UbuntuLab:/home/Keenan# sysctl fs.suid_dumpable
 fs.suid_dumpable = 0
 root@UbuntuLab:/home/Keenan#
-
+```
 ---
 
 ## Notes
